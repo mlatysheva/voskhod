@@ -161,7 +161,7 @@ header::after {
 }
 
 .logo:hover {
-  filter: invert(77%) sepia(92%) saturate(1900%) hue-rotate(380deg) brightness(95%) contrast(94%);
+  filter: invert(66%) sepia(43%) saturate(556%) hue-rotate(348deg) brightness(95%) contrast(95%);
 }
 
 .header-right {
@@ -336,6 +336,10 @@ i:hover {
 
 .action-button a {
   color: var(--blue-color);
+}
+
+.action-button a:hover {
+  color: white;
 }
 
 .team-section {
