@@ -12,9 +12,9 @@
 }
 
 html {
-  font-family: 'Roboto', 'Calibri', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   line-height: 1.5;
   background-color: var(--blue-color);
   scroll-behavior: smooth;
@@ -50,6 +50,15 @@ li {
   margin-bottom: 3rem;
 }
 
+.not-show {
+  display: none;
+}
+
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* text rules */
 
 h1, h2 {
@@ -78,8 +87,9 @@ h1 {
 }
 
 .small-title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
 }
 
 .plain-text {
@@ -88,11 +98,12 @@ h1 {
 }
 
 .announcement-text {
-  text-shadow: #ECA154 0.5px 0.5px 0.5px;
+  text-shadow: #ECA154 1px 1px 1px;
 }
 
 .regular-text {
   text-transform: none;
+  text-align: center;
 }
 
 /* Section rules */
@@ -131,7 +142,17 @@ header::after {
 
 .logo {
   height: 100px;
-  margin-left: 1rem;
+  width: 200px;
+  margin-left: 2rem;
+  background-image: url(./assets/img/Voskhod-Logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: invert(100%) sepia(48%) saturate(2%) hue-rotate(84deg) brightness(112%) contrast(101%);
+}
+
+.logo:hover {
+  filter: invert(77%) sepia(92%) saturate(1900%) hue-rotate(330deg) brightness(95%) contrast(94%);
 }
 
 .header-right {
@@ -155,7 +176,7 @@ header::after {
   margin-right: 2rem;
 }
 
-.header-contacts {
+.header-contacts, .lawyer-contacts {
   display: flex;
   flex-direction: row;
 }
@@ -337,14 +358,17 @@ i:hover {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
+  align-items: center;
 }
 
 .team-photo {
   width: 100%;
   max-width: 320px;
   margin-bottom: 1rem;
+}
+
+.lawyer-contacts a {
+  color: var(--blue-color)
 }
 
 .practices-container {
