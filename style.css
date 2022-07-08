@@ -91,6 +91,10 @@ h1 {
   text-shadow: #ECA154 0.5px 0.5px 0.5px;
 }
 
+.regular-text {
+  text-transform: none;
+}
+
 /* Section rules */
 
 header {
@@ -435,9 +439,6 @@ footer {
     height: 70px;
   }
 
-  .title {
-    margin-top: 2rem;
-  }
   .hamburger {
     padding-right: 1rem;
   }
