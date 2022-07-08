@@ -379,6 +379,7 @@ footer {
   font-size: smaller;
   letter-spacing: 3px;
   text-align: right;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
